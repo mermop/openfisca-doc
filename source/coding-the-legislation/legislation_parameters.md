@@ -132,7 +132,13 @@ def formula(person, period, parameters):
     return scale.calc(salary)
 ```
 
-Other built-in scales are:
+If `salary` is `3000` and period is `2015-06`, the output of the formula will be `2000 * 0.02 + 1000 * 0.2`
+
+
+The scales built-in OpenFisca are:
+- Marginal rate scake:
+  - Split the input into several brackets according the thresholds, and apply the corresponding rate to each bracket
+  - See previous example
 - Marginal amount tax scale:
   - Matches the input amount to a set of brackets and returns the sum of cell values from the lowest bracket to the one containing the input
   - Defined as in the previous YAML example, but replacing `rate` by `amount`
