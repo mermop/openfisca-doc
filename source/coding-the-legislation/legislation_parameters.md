@@ -95,7 +95,7 @@ public_sector:
      ...
 ```
 
-#### Scales
+#### Creating scales
 
 Scales are complex parameters constituted of brackets. They offer convenient built-in tools for recurring calculation patterns.
 
