@@ -120,6 +120,7 @@ brackets:
       1950-01-01:
         value: 2000  # The 2nd bracket starts for wages beyond 2000
 metadata:
+  type: marginal_rate
   threshold_unit: currency-EUR
   rate_unit: /1
 ```
@@ -141,10 +142,10 @@ The scales built-in OpenFisca are:
   - See previous example
 - Marginal amount tax scale:
   - Matches the input amount to a set of brackets and returns the sum of cell values from the lowest bracket to the one containing the input
-  - Defined as in the previous YAML example, but replacing `rate` by `amount`
+  - Defined as in the previous YAML example, but replacing `rate` by `amount`, and setting `type` to `marginal_amount` to the parameter's metadata
 - Single amount tax scale:
   - Matches the input amount to a set of brackets and returns the single cell value that fits within that bracket
-  - Defined as in the previous YAML example, but replacing `rate` by `amount`, and adding a `type: single_amount` to the parameter's metadata
+  - Defined as in the previous YAML example, but replacing `rate` by `amount`, and setting `type` to `single_amount` to the parameter's metadata
 
 
 Example: [the french tax scale on income](https://fr.openfisca.org/legislation/impot_revenu.bareme)
