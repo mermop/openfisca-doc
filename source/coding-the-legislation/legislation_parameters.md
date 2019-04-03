@@ -143,7 +143,7 @@ Other built-in scales are:
 
 Example: [the french tax scale on income](https://fr.openfisca.org/legislation/impot_revenu.bareme)
 
-#### Parameter depending on a variable (fancy indexing)
+#### Computing a parameter that depends on a variable (fancy indexing)
 
 Sometimes, the value of a parameter depends on a variable (e.g. a housing benefit that depends on the zone the house is built on).
 
